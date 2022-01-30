@@ -1,27 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
 body {
   padding: 0;
   margin: 0;
   background: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
 }
 
 h1 {
   color: #1076bc;
-  size: 13rem;
+  font-family: Roboto;
+  font-size: 144px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
 }
 
 h2 {
   background: #1076bc;
   display: block;
   margin: 0;
-  padding: 1em 0;
+  padding: 10px 0;
   color: white;
   font-size: 48px;
   font-weight: 400;
   text-align: center;
 }
 
+h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 section {
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+ol {
+    margin: 0 0 0 2em;
+    font-weight: 500;
+}
+
+.col {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.col:first-child {
+  margin-left: 0;
+  margin-right: 20px;
+  border-right: 1px solid #ececec;
+  /* padding-right: 20px; */
+}
+
+.col p {
+  padding-right: 40px;
+}
+
+.hero-image {
+  display: block;
+  margin: auto;
+}
+
+.video-container {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.columns {
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 120px auto;
+  display: flex;
+}
+
+.mini-map a {
+  text-decoration: none;
+}
+
+.mini-map em {
+  color: #ccc;
+  display: block;
+}
+
+a.mini-map {
+  color: inherit;
+}
+
+.mini-map img {
+  width: 400px;
+}
+
+.full-width {
+  max-width: unset;
+  text-align: center;
+}
+
+.full-width img {
+  width: 100%;
+  display: block;
+}
+
+.full-width em {
+  font-size: 12px;
+  font-style: normal;
+  text-align: center;
+  margin: 10px 0 0;
+  display: block;
+}
+
+.floorplan {
+  width: 100%;
+  background-image: url(/images/laminate_flooring.jpg);
+  max-width: unset;
+  padding: 140px 0;
+}
+
+.floorplan .inner {
+  display: flex;
+  font-size: 32px;
+  align-items: center;
+  justify-content: center;
 }
