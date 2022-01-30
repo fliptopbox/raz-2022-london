@@ -52,43 +52,64 @@
       </div>
 
       <div class="col">
-        <input type="text" name="fullname" placeholder="Fullname" />
-        <input type="text" name="emailaddress" placeholder="Email address" />
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="text" name="fullname" placeholder="Fullname" />
+          <input type="text" name="emailaddress" placeholder="Email address" />
 
-        <h3 class="info">If you have a Feldenkrais Table:</h3>
-        <ul class="radios">
-          <li>
-            <input type="radio" id="radio-none" name="equipment" value="none" />
-            <label for="radio-none">I can not bring equipment</label>
-          </li>
-          <li>
+          <h3 class="info">If you have a Feldenkrais Table:</h3>
+          <ul class="radios">
+            <li>
+              <input
+                type="radio"
+                id="radio-none"
+                name="equipment"
+                value="none"
+              />
+              <label for="radio-none">I can not bring equipment</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="radio-regular"
+                name="equipment"
+                value="regular"
+              />
+              <label for="radio-regular">
+                I can bring a Regular 184 x 84/89cm
+              </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="radio-large"
+                name="equipment"
+                value="large"
+              />
+              <label for="radio-large"
+                >I can bring a Large 198cm x 84/89cm</label
+              >
+            </li>
+          </ul>
+
+          <input
+            type="submit"
+            xdisabled
+            value="Notify me when booking opens"
+          />
+
+          <div class="confirm">
             <input
-              type="radio"
-              id="radio-regular"
-              name="equipment"
-              value="regular"
+              type="checkbox"
+              id="check-confirm"
+              name="confirm"
+              value="true"
             />
-            <label for="radio-regular">
-              I can bring a Regular 184 x 84/89cm
-            </label>
-          </li>
-          <li>
-            <input
-              type="radio"
-              id="radio-large"
-              name="equipment"
-              value="large"
-            />
-            <label for="radio-large">I can bring a Large 198cm x 84/89cm</label>
-          </li>
-        </ul>
-
-        <button disabled>Notify me when booking opens</button>
-
-        <div class="confirm">
-          <input type="checkbox" id=check-confirm name="confirm" value="true" />
-            <label for="check-confirm">I confirm that I am a Certified Feldenkrais &copy; Practitioner.</label>
-        </div>
+            <label for="check-confirm"
+              >I confirm that I am a Certified Feldenkrais&reg;
+              Practitioner.</label
+            >
+          </div>
+        </form>
       </div>
     </section>
 
@@ -289,5 +310,6 @@
         </ul>
       </div>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>

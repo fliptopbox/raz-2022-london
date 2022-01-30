@@ -57,7 +57,7 @@ input[type="text"] {
   font-size: 1.2em;
 }
 
-button {
+input[type=submit] {
   display: block;
   margin: 10px 0;
   padding: 10px 40px;
@@ -68,7 +68,7 @@ button {
   color: white;
 }
 
-button[disabled] {
+input[disabled] {
     background: #efefef;
     color: #ccc;
 }
