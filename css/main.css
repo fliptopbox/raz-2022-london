@@ -126,6 +126,8 @@ input[disabled] {
   width: 90%;
   height: 400px;
   margin-right: 50px;
+  background-position: 50% 50%;
+  background-size: auto;
 }
 
 .full-width {
