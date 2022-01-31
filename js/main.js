@@ -47,5 +47,5 @@ function validateForm(e) {
   console.log(reflector);
   console.log(form);
 
-  return true;
+  form.submit();
 }
