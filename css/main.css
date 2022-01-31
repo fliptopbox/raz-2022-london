@@ -76,7 +76,7 @@ input[type="text"] {
     font-size: 1.2em;
 }
 
-input[type="submit"] {
+button {
     display: block;
     margin: 10px 0;
     padding: 10px 40px;

@@ -1,9 +1,10 @@
 const form = document.querySelector("form[data-netlify]");
 
-form.onsubmit = (e) => {
+function validateForm(e) {
+  e.stopImmediatePropagation();
   e.preventDefault();
 
-    const form = document.querySelector("form");
+  const form = document.querySelector("form");
   const fullname = document.querySelector("[name=fullname]").value;
   const emailaddress = document.querySelector("[name=emailaddress]").value;
 
@@ -32,8 +33,7 @@ form.onsubmit = (e) => {
     return false;
   }
 
-    console.log(form);
-    form.innerHTML = `
+  const reflector = `
         <h3 style="margin-top:0">Thank you</h3>
 
         <p>Your details have been sent successfully,
@@ -43,5 +43,9 @@ form.onsubmit = (e) => {
         an email will be sent to everyone so keep an eye open
         because there are limited places for the workshop.</p>
     `;
-  return true;
-};
+
+  console.log(reflector);
+  console.log(form);
+
+  form.submit();
+}

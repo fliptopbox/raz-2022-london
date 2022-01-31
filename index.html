@@ -64,7 +64,7 @@
       </div>
 
       <div class="col">
-        <form name="contact" method="POST" data-netlify="true">
+        <form action="/" name="contact" method="GET" data-netlify="true">
           <input type="text" name="fullname" placeholder="Fullname" />
           <input type="text" name="emailaddress" placeholder="Email address" />
 
@@ -106,7 +106,7 @@
             </li>
           </ul>
 
-          <input type="submit" xdisabled value="Notify me when booking opens" />
+          <button onclick="validateForm(event)">Notify me when booking opens</button>
 
           <div class="confirm">
             <input
@@ -384,7 +384,7 @@
           Functional Integration lessons.
         </p>
         <p>
-          <a href="https://www.embodymovemet.co.uk/" target="_blank">Website</a>
+          <a href="https://www.embodymovement.co.uk/" target="_blank">Website</a>
         </p>
       </div>
     </section>
