@@ -64,7 +64,7 @@
       </div>
 
       <div class="col">
-        <form action="/" name="contact" method="POST" data-netlify="true">
+        <form action="/" name="contact" method="POST" onsubmit="validateForm(event)" data-netlify="true">
           <input type="text" name="fullname" placeholder="Fullname" />
           <input type="text" name="emailaddress" placeholder="Email address" />
 
@@ -106,7 +106,7 @@
             </li>
           </ul>
 
-          <button onclick="validateForm(event)">Notify me when booking opens</button>
+          <button type="submit">Notify me when booking opens</button>
 
           <div class="confirm">
             <input
