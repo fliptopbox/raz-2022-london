@@ -1,5 +1,14 @@
 const form = document.querySelector("form[data-netlify]");
 
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    type: "loop",
+    autoplay: true,
+    interval: 5000,
+  });
+  splide.mount();
+});
+
 function validateForm(e) {
   e.stopImmediatePropagation();
   e.preventDefault();

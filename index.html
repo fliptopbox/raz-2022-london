@@ -3,10 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <title>Raz London 2022</title>
-    <link rel="stylesheet" href="css/main.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-  </head>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
+      integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
+      integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
   <body>
     <h2>An advanced training with Raz Ori</h2>
     <iframe
@@ -64,7 +76,12 @@
       </div>
 
       <div class="col">
-        <form name="contact" method="POST" onsubmit="validateForm(event)" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          onsubmit="validateForm(event)"
+          data-netlify="true"
+        >
           <input type="text" name="fullname" placeholder="Full name" />
           <input type="text" name="emailaddress" placeholder="Email address" />
 
@@ -124,7 +141,19 @@
     </section>
 
     <section class="full-width">
-      <img src="images/interior.jpg" alt="Workshop main space" />
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="images/venue/1.jpg" /></li>
+            <li class="splide__slide"><img src="images/venue/2.jpg" /></li>
+            <li class="splide__slide"><img src="images/venue/3.jpg" /></li>
+            <li class="splide__slide"><img src="images/venue/4.jpg" /></li>
+            <li class="splide__slide"><img src="images/venue/5.jpg" /></li>
+            <li class="splide__slide"><img src="images/venue/6.jpg" /></li>
+          </ul>
+        </div>
+      </div>
+
       <em>
         Golden Lane studio is a peaceful urban oasis nestled in the City of
         London near the Barbican.
@@ -383,7 +412,9 @@
           Functional Integration lessons.
         </p>
         <p>
-          <a href="https://www.embodymovement.co.uk/" target="_blank">Website</a>
+          <a href="https://www.embodymovement.co.uk/" target="_blank"
+            >Website</a
+          >
         </p>
       </div>
     </section>
@@ -393,5 +424,7 @@
       Charlotte
     </footer>
     <script src="js/main.js"></script>
+    <script>
+    </script>
   </body>
 </html>
