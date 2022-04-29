@@ -19,7 +19,10 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <script>
-      const remainder = 3;
+      const remainder = 2;
+      function places(text = "remaining") {
+        return remainder ? `${remainder} ${remaining}` : `fully booked`;
+      }
     </script>
   </head>
   <body>
@@ -40,7 +43,7 @@
       allowfullscreen
       autoplay="1"
     ></iframe>
-    <h2>Summer 2022 in London for 4 days - <script>document.write(remainder)</script> places remaining</h2>
+    <h2>Summer 2022 in London for 4 days - <script>document.write(places("places remaining"))</script></h2>
     <h1>Hip Joints &amp; Walking</h1>
 
     <section class="columns">
@@ -52,7 +55,7 @@
           <div class="info-row"><strong>Time:</strong> 11.00am - 5.00pm</div>
           <div class="info-row"><strong>Price:</strong> £395 per person *</div>
           <div class="info-row">
-            <strong>Places:</strong> <del>25</del> <script>document.write(remainder)</script> remaining
+            <strong>Places:</strong> <del>25</del> <script>document.write(places("remaining"))</script>
           </div>
         </div>
 
@@ -126,7 +129,8 @@
             </li>
           </ul>
 
-          <button type="submit">Send me payment details</button>
+          <button type="submit" id="ctatext">Send me payment details</button>
+          <script>if(!remainder) document.querySelector("#ctatext").innerHTML = "Add me to waiting list";</script>
 
           <div class="confirm">
             <input
