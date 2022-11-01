@@ -1,440 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Raz London 2022</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
-      integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q="
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Raz London 2023</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
-      integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <script>
-      const remainder = 1;
-      function places(text = "remaining") {
-        return remainder ? `${remainder} ${text}` : `fully booked`;
-      }
-    </script>
-  </head>
-  <body>
-    <h2>An advanced training with Raz Ori</h2>
-    <iframe
-      class="video-container"
-      width="1440px"
-      height="771px"
-      src="https://www.youtube.com/embed/wQ_C3bk6f-c"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture"
-      allowfullscreen
-      autoplay="1"
-    ></iframe>
-    <h2>Summer 2022 in London for 4 days - <script>document.write(places("places remaining"))</script></h2>
-    <h1>Hip Joints &amp; Walking</h1>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"
+    integrity="sha256-b/fLMBwSqO9vy/phDPv6OufPpR+VfUL+OsTEkJMPg+Q=" crossorigin="anonymous"></script>
 
-    <section class="columns">
-      <div class="col">
-        <div class="info">
-          <div class="info-row">
-            <strong>Dates:</strong> Thur 2 - Sun 5 June 2022
-          </div>
-          <div class="info-row"><strong>Time:</strong> 11.00am - 5.00pm</div>
-          <div class="info-row"><strong>Price:</strong> £395 per person *</div>
-          <div class="info-row">
-            <strong>Places:</strong> <del>25</del> <script>document.write(places("remaining"))</script>
-          </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
+    integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script>
+    const remainder = 1;
+    function places(text = "remaining") {
+      return remainder ? `${remainder} ${text}` : `fully booked`;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="hero-image">
+    <img src="images/hero-banner.jpg" alt="An advanced training with Raz Ori">
+  </div>
+  <h2>Advanced training in London with Feldenkrais Trainer Raz Ori -
+    <span class="remainder">25 places remaining</span>
+  </h2>
+
+  <h1>Thinking &amp; Breathing, Breathing & Action</h1>
+
+  <section class="columns">
+    <div class="col">
+      <div class="info">
+        <div class="info-row">
+          <strong>Dates:</strong> Thur 2 - Sun 5 June 2023
         </div>
+        <div class="info-row"><strong>Time:</strong> 11.00am - 5.00pm</div>
+        <div class="info-row"><strong>Price:</strong> £395 per person *</div>
+        <div class="info-row">
+          <strong>Places:</strong> <del class="total-places">28</del>
+          <span class="remainder">9 places remaining</span>
+        </div>
+      </div>
 
-        <h3 class="info" style="margin-bottom: 8vh; display: block">
-          To attend this workshop you need to be a fully qualified/certified
-          Feldenkrais&reg; practitioner.
+      <div class="info" style="margin-bottom: 8vh; display: block">
+        <strong>Regarding Feldenkrais tables:</strong>
+        <br>
+        We can not provide tables. If you want to work on a table you will need to make arrangements to bring your own.
+        Storage is available for the duration of the training.
+      </div>
+
+      <aside>
+        * Cancellation policy we can not offer refunds after 14 April 2023 (6
+        weeks before)
+      </aside>
+    </div>
+
+    <div class="col">
+      <form name="contact" method="POST" onsubmit="validateForm(event)" data-netlify="true">
+        <input type="text" name="fullname" placeholder="Full name" />
+        <input type="text" name="emailaddress" placeholder="Email address" />
+
+        <h3 class="info" style="margin: 80px 0 20px">
+          If you have a Feldenkrais Table:
         </h3>
 
-        <p class="comment">
-          <strong>Helpers (x2) - no vacancies</strong><br />
-          <del>
-            We have allocated two discount tickets which are available at
-            <strong>£340,</strong> for individuals with financial limitations,
-            to help for <strong>2 days</strong> during the training. The tasks
-            will include chores, lifting and arranging tables and packing up at
-            the end of the day.
-          </del>
-        </p>
-
-        <aside>
-          * Cancellation policy we can not offer refunds after 14 April 2022 (6
-          weeks before)
-        </aside>
-      </div>
-
-      <div class="col">
-        <form
-          name="contact"
-          method="POST"
-          onsubmit="validateForm(event)"
-          data-netlify="true"
-        >
-          <input type="text" name="fullname" placeholder="Full name" />
-          <input type="text" name="emailaddress" placeholder="Email address" />
-
-          <h3 class="info" style="margin: 80px 0 20px">
-            If you have a Feldenkrais Table:
-          </h3>
-
-          <ul class="radios" style="margin: 0 0 50px 0">
-            <li>
-              <input
-                type="radio"
-                id="radio-none"
-                name="equipment"
-                value="none"
-              />
-              <label for="radio-none">I can not bring equipment</label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                id="radio-regular"
-                name="equipment"
-                value="regular"
-              />
-              <label for="radio-regular">
-                I can bring a Regular 184 x 84/89cm
-              </label>
-            </li>
-            <li>
-              <input
-                type="radio"
-                id="radio-large"
-                name="equipment"
-                value="large"
-              />
-              <label for="radio-large"
-                >I can bring a Large 198cm x 84/89cm</label
-              >
-            </li>
-          </ul>
-
-          <button type="submit" id="ctatext">Send me payment details</button>
-          <script>if(!remainder) document.querySelector("#ctatext").innerHTML = "Add me to waiting list";</script>
-
-          <div class="confirm">
-            <input
-              type="checkbox"
-              id="check-confirm"
-              name="confirm"
-              value="true"
-            />
-            <label for="check-confirm"
-              >I am a fully qualified or certified Feldenkrais&reg;
-              Practitioner.</label
-            >
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="full-width">
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide"><img src="images/venue/2.jpg" /></li>
-            <li class="splide__slide"><img src="images/venue/1.jpg" /></li>
-            <li class="splide__slide"><img src="images/venue/3.jpg" /></li>
-            <li class="splide__slide"><img src="images/venue/4.jpg" /></li>
-            <li class="splide__slide"><img src="images/venue/5.jpg" /></li>
-            <li class="splide__slide"><img src="images/venue/6.jpg" /></li>
-          </ul>
-        </div>
-      </div>
-
-      <em>
-        Golden Lane studio is a peaceful urban oasis nestled in the City of
-        London near the Barbican.
-      </em>
-    </section>
-
-    <section class="columns">
-      <div class="col">
-        <h3>About this training:</h3>
-        <p>The functionality of our hip joints is a marvel!</p>
-        <p>
-          On the one hand, they enable freedom in all three dimensions of
-          movement. And on the other hand, they “carry” the task of supporting
-          the body in non-stable conditions.
-        </p>
-        <p>
-          These supposedly opposing properties, mobility and stability, are in
-          fact synergistic and serve upright organization gracefully.
-        </p>
-        <p>
-          In this workshop we will analyze how the hip-joints serve as the
-          “launching pad” for efficient walking and upright carriage.
-        </p>
-        <p>
-          We will also train our observational skills needed to recognize the
-          student’s self-organization and gait patterns. The ability to observe
-          those is essential as Functional Integration teachers for assessing
-          our student’s potential for long-lasting change.
-        </p>
-        <p>
-          We will enrich our understanding by examining the functional anatomy
-          of the hip joints, by analyzing videos of walking, running and
-          athletic performances.
-        </p>
-        <p>
-          Each day will be accompanied by an Awareness Through Movement lesson
-          that is specifically chosen to highlight the functional relationships
-          that will be explored in Functional Integration.
-        </p>
-      </div>
-
-      <div class="col">
-        <h3>Afterwards you will be able to:</h3>
-        <ul>
+        <ul class="radios" style="margin: 0 0 50px 0">
           <li>
-            Recognise how the hip joints work in unison to create efficient
-            support and mobility.
+            <input type="radio" id="radio-none" name="equipment" value="none" />
+            <label for="radio-none">I can not bring equipment</label>
           </li>
           <li>
-            Apply some functional anatomy of the hip-pelvic girdle relating to
-            walking.
+            <input type="radio" id="radio-regular" name="equipment" value="regular" />
+            <label for="radio-regular">
+              I can bring a Regular 184 x 84/89cm
+            </label>
           </li>
           <li>
-            Identify some functional insights from an evolutionary perspective.
-          </li>
-          <li>Observe and engage with your students’ gait pattern.</li>
-          <li>
-            Examine how the hip joints serve as a link between the distal and
-            the proximal.
-          </li>
-          <li>
-            Integrate an FI lesson and help the student “carry” the lesson
-            better.
+            <input type="radio" id="radio-large" name="equipment" value="large" />
+            <label for="radio-large">I can bring a Large 198cm x 84/89cm</label>
           </li>
         </ul>
 
-        <h3>Post workshop:</h3>
+        <button type="submit" id="ctatext">Send me payment details</button>
+        <script>if (!remainder) document.querySelector("#ctatext").innerHTML = "Add me to waiting list";</script>
 
-        <p>
-          Included in the price of this workshop all participants will have
-          access to: FI videos, ATM audio recordings, and afterwards a follow up
-          FI practice session (organised by Charlotte) and a ZOOM Q&amp;A (with
-          Raz).
-        </p>
+        <div class="confirm">
+          <input type="checkbox" id="check-confirm" name="confirm" value="true" />
+          <label for="check-confirm">I am a fully qualified or certified Feldenkrais&reg;
+            Practitioner.</label>
+        </div>
+      </form>
+    </div>
+  </section>
 
-        <p>
-          <strong> Face to face FI practice session: </strong>
-          <br />
-          <em>Fri 24 June at 4-7pm BST (3 hours)</em>
-          <br />
-          <br />
 
-          This is for those who attended the workshop and would like to get
-          together and do some FI practice. This will take place at the same
-          venue.
+  <h2 class="banner banner-about">About this training</h2>
+
+  <section class="columns">
+    <div class="col">
+      <p>Both voluntary and involuntary, breathing constitutes the most fundamental and primary movement of life. The
+        action of breathing is an integrated part of every single action that we take, and is affected by how we act,
+        what
+        we think, our motivations, intentions and emotional state.</p>
+
+      <p>As practitioners, how much attention do we pay to our student's breathing habits?</p>
+
+      <p>Are they obvious or elusive to us, and should they be explicitly or implicitly addressed?</p>
+
+      <p>In this advanced training Raz will illuminate the deep connections between our breathing patterns, our
+        self-carriage and our sense of well-being and how interacting with our own and our student's breathing patterns
+        potentiates profound change and improvement.</p>
+
+      <p>Raz will begin with a thorough examination of the physio-motor characteristics of breathing, clarifying how the
+        optimal, non-disturbed breathing mechanism works. Understanding the different synergies that are involved in
+        producing the continuous flow of air is essential for understanding how breathing and upright carriage are
+        intimately linked and form one single system.</p>
+
+      <p>Raz will then guide us in a detailed exploration of the different common breathing disturbances and how they
+        are
+        linked to common faulty postural patterns, further clarifying how a well-organized breathing mechanism aids in
+        upright carriage and vice versa.</p>
+    </div>
+
+    <div class="col">
+      <p>After exploring in theory and in practice through Awareness through Movement lessons, we will examine how to
+        apply these synergistic relationships in Functional Integration. Sensitizing ourselves to join and follow our
+        student’s breathing, relating the breathing to the organization of the spine, using our hands to stimulate and
+        expand the breathing pattern are all skills that we will explore together. </p>
+      <p>You will gain a better understanding of:</p>
+
+      <ul>
+        <li>The workings of the ideal breathing mechanism. </li>
+        <li>The most common breathing disturbances. </li>
+        <li>How breathing and uprightness are synergistic. </li>
+        <li>Incorporating breathing in Awareness through movement lessons. </li>
+        <li>Approaching breathing patterns in Functional Integration lessons. </li>
+        <li>The central role of breathing in the integration of a lesson.</li>
+      </ul>
+
+      <h3>
+        Post workshop:
+      </h3>
+
+      <p>Included in the price of this workshop all participants will have access to: FI videos, ATM recordings and a
+        ZOOM Q&A (with Raz).</p>
+
+      <h3>Question time follow-up video:</h3>
+      <p>A recorded Q&A Session for this training will recorded to address any questions thay you may have afterwards.
+        Questions can be submitted via email.</p>
+
+    </div>
+  </section>
+
+  <h2 class="banner banner-venue">About the Venue:</h2>
+
+  <section class="columns">
+    <div class="col">
+      <h3>Venue:</h3>
+      <p>
+        <strong>Golden Lane Community Centre:</strong>
+        Fann Street, London EC1Y 0SA
+      </p>
+
+      <a class="mini-map" target="_blank" href="https://goo.gl/maps/HvAh81847WuL2TqL6">
+        <span class="google-map"></span>
+      </a>
+
+      <a href="https://goo.gl/maps/HvAh81847WuL2TqL6" target="_blank">View on Google Maps</a>
+
+      <h3>Transport &amp; surrounding areas:</h3>
+      <ul>
+        <li>5 min walk from Barbican tube station</li>
+        <li>11 min walk from Old Street tube station</li>
+        <li>
+          4 min to Whitecross Street with a variety of food stalls, cafes,
+          restaurants and Waitrose
+        </li>
+        <li>2 min walk to green space (Fortune Street Park) and Giddy Up Coffee stall</li>
+        <li>1 min walk to a pond and benches</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <h3>Places to stay:</h3>
+      <ul>
+        <li>
+          <a href="https://www.yha.org.uk/places-to-stay/london">Youth Hostels Association (YHA)</a>
+        </li>
+        <li>
           <a
-            href="mailto:charlotte.seirberg@gmail.com?subject=Raz Workshop - Practice FI enquiry"
-          >
-            Please contact Charlotte
-          </a>
-          if you are interested.
-        </p>
+            href="https://www.travelodge.co.uk/hotels/340/London-Central-City-Road-hotel?utm_source=google&utm_medium=GHA_Organic&utm_campaign=GHA_London%20Central%20City%20Road">Travel
+            Lodge City Road</a>
+        </li>
+      </ul>
 
-        <p>
-          <strong> Zoom session with Raz:</strong>
-          <br />
-          <em>Friday 8 July at 5-6pm BST (60 minutes)</em>
-          <br />
-          <br />
+      <p>
+        Please remember the Queens Jubilee may influence availability of
+        accommodation so check early.
+      </p>
 
-          Raz will also hold a Zoom live session for questions and answers to
-          enable participants to receive further input and guidance after having
-          accumulated some experience with the training content.
-        </p>
+      <h3>Breaks during the workshop:</h3>
+      <ul>
+        <li>morning break (15min)</li>
+        <li>lunch (60 minutes)</li>
+        <li>afternoon break (15min)</li>
+      </ul>
+
+      <h3>Facilities:</h3>
+      <ul>
+        <li>a small kitchen with fridge and microwave</li>
+        <li>toilets (with disabled access)</li>
+        <li>lounge/reception area</li>
+        <li>room to store belongings</li>
+      </ul>
+
+      <h3>What to bring:</h3>
+      <ul>
+        <li>Yoga mat size (max 185cm x 62 cm)</li>
+        <li>small towel for the face</li>
+        <li>a Feldenkrais (or Yoga) table</li>
+        <li>indoor footwear (optional)</li>
+      </ul>
+
+      <h3>Light refreshments:</h3>
+      <ul>
+        <li>tea, infusions and instant coffee</li>
+        <li>fruit and biscuits</li>
+      </ul>
+    </div>
+  </section>
+
+  <h2 class="banner banner-venue">About Us</h2>
+  
+  <section class="columns">
+    <div class="col">
+      <div class="portrait">
+        <img src="./images/portrait-raz.jpg" alt="Raz Ori" />
+        <strong>Raz Ori</strong>
+        <em>Feldenkrais Trainer </em>
       </div>
-    </section>
-
-    <section class="floorplan">
-      <div class="inner">
-        <img src="images/floorplan.png" alt="" />
-        <ol>
-          <li>Studio space</li>
-          <li>Unisex WCs</li>
-          <li>Kitchen</li>
-          <li>Storage room</li>
-          <li>Lounge &amp; seating</li>
-          <li>Entrance hall</li>
-        </ol>
+      <p>
+        Raz Ori is a Practitioner and Trainer of the Feldenkrais Method®. He
+        has served on the educational staff of training programs in Tel-Aviv,
+        New-York, Germany, Italy, and South Korea, teaching with Ruty Bar,
+        David Zemach-Bersin, and Lior Pessach.
+      </p>
+      <p>
+        He graduated in 2001 from the Tel-Aviv Feldenkrais Professional
+        Training Program, and trained for two more years with Yochanan
+        Rywerant, one of Dr. Feldenkrais’ first students.
+      </p>
+      <p>
+        Raz runs The Ramat-Aviv Feldenkrais Center where he teaches Awareness
+        Through Movement classes and gives individual Functional Integration
+        lessons.
+      </p>
+      <p>
+        Raz gained clinical experience working for 15 years at Clalit
+        Integrative Medicine, part of Israel’s largest public health provider.
+        He has also worked at the Sheba Medical Center with disabled war
+        veterans suffering from chronic pain, phantom limb pain, PTSD, and
+        head injuries.
+      </p>
+      <p>
+        Raz is also a certified JKA practitioner working with special needs
+        children. He teaches advanced trainings and conducts on-line mentoring
+        groups.
+      </p>
+      <p>Raz lives in Tel-Aviv, with his wife and children.</p>
+      <p><a href="https://www.razori.co.il/" target="_blank">Website</a></p>
+    </div>
+    <div class="col">
+      <div class="portrait">
+        <img src="./images/portrait-lottie.jpg" alt="Charlotte seirberg" />
+        <strong>Charlotte Seirberg</strong>
+        <em>Workshop Producer </em>
       </div>
-    </section>
+      <p>
+        Charlotte is a Feldenkrais Practitioner based in London. She has over
+        14 years experience of teaching a variety of movement classes and
+        workshops in the NHS, adult education, the local community, the
+        commercial sector and in private practice.
+      </p>
 
-    <section class="columns">
-      <div class="col">
-        <h3>Venue:</h3>
-        <p>
-          <strong>Golden Lane Community Centre:</strong>
-          Fann Street, London EC1Y 0SA 
-        </p>
+      <p>
+        Charlotte runs a private practice in Shoreditch for individual
+        Functional Integration lessons.
+      </p>
+      <p>
+        <a href="https://www.embodymovement.co.uk/" target="_blank">Website</a>
+      </p>
+    </div>
+  </section>
 
-        <a
-          class="mini-map"
-          target="_blank"
-          href="https://goo.gl/maps/HvAh81847WuL2TqL6"
-        >
-          <span class="google-map"></span>
-        </a>
-        
-        <a href="https://goo.gl/maps/HvAh81847WuL2TqL6" 
-             target="_blank"
-             >View on Google Maps</a>
+  <footer>
+    copyright 2023 - all rights reserved - made with ❤️ by Bruce &amp;
+    Charlotte
+  </footer>
+  <script src="js/main.js" type="module"></script>
+</body>
 
-        <h3>Transport &amp; surrounding areas:</h3>
-        <ul>
-          <li>5 min walk from Barbican tube station</li>
-          <li>11 min walk from Old Street tube station</li>
-          <li>
-            4 min to Whitecross Street with a variety of food stalls, cafes,
-            restaurants and Waitrose
-          </li>
-          <li>2 min walk to green space (Fortune Street Park)</li>
-          <li>1 min walk to a pond and benches</li>
-        </ul>
-      </div>
-
-      <div class="col">
-        <h3>Places to stay:</h3>
-        <ul>
-          <li>
-            <a href="https://www.yha.org.uk/places-to-stay/london"
-              >Youth Hostels Association (YHA)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.travelodge.co.uk/hotels/340/London-Central-City-Road-hotel?utm_source=google&utm_medium=GHA_Organic&utm_campaign=GHA_London%20Central%20City%20Road"
-              >Travel Lodge City Road</a
-            >
-          </li>
-        </ul>
-
-        <p>
-          Please remember the Queens Jubilee may influence availability of
-          accommodation so check early.
-        </p>
-
-        <h3>Breaks during the workshop:</h3>
-        <ul>
-          <li>morning break (15min)</li>
-          <li>lunch (60 minutes)</li>
-          <li>afternoon break (15min)</li>
-        </ul>
-
-        <h3>Facilities:</h3>
-        <ul>
-          <li>a small kitchen with fridge and microwave</li>
-          <li>toilets (with disabled access)</li>
-          <li>lounge/reception area</li>
-          <li>room to store belongings</li>
-        </ul>
-
-        <h3>What to bring:</h3>
-        <ul>
-          <li>Yoga mat size (max 185cm x 62 cm)</li>
-          <li>small towel for the face</li>
-          <li>a reusable cup</li>
-        </ul>
-
-        <h3>Light refreshments:</h3>
-        <ul>
-          <li>tea and coffee</li>
-          <li>fruit and biscuits</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="columns">
-      <div class="col">
-        <div class="portrait">
-          <img src="./images/portrait-raz.jpg" alt="Raz Ori" />
-          <strong>Raz Ori</strong>
-          <em>Feldenkrais Trainer </em>
-        </div>
-        <p>
-          Raz Ori is a Practitioner and Trainer of the Feldenkrais Method®. He
-          has served on the educational staff of training programs in Tel-Aviv,
-          New-York, Germany, Italy, and South Korea, teaching with Ruty Bar,
-          David Zemach-Bersin, and Lior Pessach.
-        </p>
-        <p>
-          He graduated in 2001 from the Tel-Aviv Feldenkrais Professional
-          Training Program, and trained for two more years with Yochanan
-          Rywerant, one of Dr. Feldenkrais’ first students.
-        </p>
-        <p>
-          Raz runs The Ramat-Aviv Feldenkrais Center where he teaches Awareness
-          Through Movement classes and gives individual Functional Integration
-          lessons.
-        </p>
-        <p>
-          Raz gained clinical experience working for 15 years at Clalit
-          Integrative Medicine, part of Israel’s largest public health provider.
-          He has also worked at the Sheba Medical Center with disabled war
-          veterans suffering from chronic pain, phantom limb pain, PTSD, and
-          head injuries.
-        </p>
-        <p>
-          Raz is also a certified JKA practitioner working with special needs
-          children. He teaches advanced trainings and conducts on-line mentoring
-          groups.
-        </p>
-        <p>Raz lives in Tel-Aviv, with his wife and children.</p>
-        <p><a href="https://www.razori.co.il/" target="_blank">Website</a></p>
-      </div>
-      <div class="col">
-        <div class="portrait">
-          <img src="./images/portrait-lottie.jpg" alt="Charlotte seirberg" />
-          <strong>Charlotte Seirberg</strong>
-          <em>Workshop Producer </em>
-        </div>
-        <p>
-          Charlotte is a Feldenkrais Practitioner based in London. She has over
-          14 years experience of teaching a variety of movement classes and
-          workshops in the NHS, adult education, the local community, the
-          commercial sector and in private practice.
-        </p>
-
-        <p>
-          Charlotte runs a private practice in Shoreditch for individual
-          Functional Integration lessons.
-        </p>
-        <p>
-          <a href="https://www.embodymovement.co.uk/" target="_blank"
-            >Website</a
-          >
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      copyright 2022 - all rights reserved - made with ❤️ by Bruce &amp;
-      Charlotte
-    </footer>
-    <script src="js/main.js"></script>
-    <script></script>
-  </body>
 </html>

@@ -1,3 +1,4 @@
+import getRegistrations from "./registrations.js";
 const form = document.querySelector("form[data-netlify]");
 
 document.addEventListener("DOMContentLoaded", function () {
