@@ -12,12 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"
     integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css" />
-  <script>
-    const remainder = 1;
-    function places(text = "remaining") {
-      return remainder ? `${remainder} ${text}` : `fully booked`;
-    }
-  </script>
 </head>
 
 <body>
@@ -34,7 +28,7 @@
     <div class="col">
       <div class="info">
         <div class="info-row">
-          <strong>Dates:</strong> Thur 2 - Sun 5 June 2023
+          <strong>Dates:</strong> Thur 13 - Sun 16 April 2023
         </div>
         <div class="info-row"><strong>Time:</strong> 11.00am - 5.00pm</div>
         <div class="info-row"><strong>Price:</strong> £395 per person *</div>
@@ -44,7 +38,7 @@
         </div>
       </div>
 
-      <div class="info" style="margin-bottom: 8vh; display: block">
+      <div class="info" style="margin-bottom: 4vh; display: block">
         <strong>Regarding Feldenkrais tables:</strong>
         <br>
         We can not provide tables. If you want to work on a table you will need to make arrangements to bring your own.
@@ -52,8 +46,8 @@
       </div>
 
       <aside>
-        * Cancellation policy we can not offer refunds after 14 April 2023 (6
-        weeks before)
+        * Cancellation policy we can not offer refunds after 13 March 2023
+        (4 weeks before)
       </aside>
     </div>
 
@@ -61,42 +55,23 @@
       <form name="contact" method="POST" onsubmit="validateForm(event)" data-netlify="true">
         <input type="text" name="fullname" placeholder="Full name" />
         <input type="text" name="emailaddress" placeholder="Email address" />
-
-        <h3 class="info" style="margin: 80px 0 20px">
-          If you have a Feldenkrais Table:
-        </h3>
-
-        <ul class="radios" style="margin: 0 0 50px 0">
-          <li>
-            <input type="radio" id="radio-none" name="equipment" value="none" />
-            <label for="radio-none">I can not bring equipment</label>
-          </li>
-          <li>
-            <input type="radio" id="radio-regular" name="equipment" value="regular" />
-            <label for="radio-regular">
-              I can bring a Regular 184 x 84/89cm
-            </label>
-          </li>
-          <li>
-            <input type="radio" id="radio-large" name="equipment" value="large" />
-            <label for="radio-large">I can bring a Large 198cm x 84/89cm</label>
-          </li>
-        </ul>
-
-        <button type="submit" id="ctatext">Send me payment details</button>
-        <script>if (!remainder) document.querySelector("#ctatext").innerHTML = "Add me to waiting list";</script>
-
+        <input type="hidden" name="eventname" placeholder="breathing" />
+        <br>
         <div class="confirm">
           <input type="checkbox" id="check-confirm" name="confirm" value="true" />
           <label for="check-confirm">I am a fully qualified or certified Feldenkrais&reg;
             Practitioner.</label>
         </div>
+        <br>
+        <button type="submit" id="ctatext">Register</button>
       </form>
     </div>
   </section>
 
 
-  <h2 class="banner banner-about paralax" style="background-image:url(https://ik.imagekit.io/fliptopbox/ariel-airport.jpg?tr=tr:n-landscape)">About this training</h2>
+  <h2 class="banner banner-about paralax"
+    style="background-image:url(/images/people-on-the-floor.jpg)">About this
+    training</h2>
 
   <section class="columns">
     <div class="col">
@@ -154,7 +129,9 @@
     </div>
   </section>
 
-  <h2 class="banner banner-venue paralax" style="background-image:url(https://ik.imagekit.io/fliptopbox/origami-crane.jpg?tr=tr:n-landscape)">About the Venue:</h2>
+  <h2 class="banner banner-venue paralax"
+    style="background-image:url(/images/sofia-rolling-left.jpg)">About the Venue:
+  </h2>
 
   <section class="columns">
     <div class="col">
@@ -232,9 +209,9 @@
     </div>
   </section>
 
-  <h2 class="banner banner-venue paralax" 
-  style="background-image:url(https://ik.imagekit.io/fliptopbox/window-shopper.jpg?tr=tr:n-landscape)">About Us</h2>
-  
+  <h2 class="banner banner-venue paralax"
+    style="background-image:url(/images/raz-sitting-on-table.jpg)">About Us</h2>
+
   <section class="columns">
     <div class="col">
       <div class="portrait">
@@ -296,7 +273,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="paralax">
     copyright 2023 - all rights reserved - made with ❤️ by Bruce &amp;
     Charlotte
   </footer>

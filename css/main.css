@@ -33,7 +33,7 @@ h2.banner {
   font-weight: bold;
   display: block;
   padding: 84px 0;
-  margin: 200px 0;
+  margin: 10vh 0;
   text-align: center;
   background-color: #333333;
   color: white;
@@ -326,7 +326,7 @@ section.floorplan {
 }
 
 .info {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 h3.info {
