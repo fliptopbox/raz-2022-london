@@ -53,11 +53,11 @@ h3 {
 
 .hero-image {
   text-align: center;
-  display: block;
 }
 
 .hero-image img {
   width: 99vw;
+  display: block;
 }
 
 .paralax {
