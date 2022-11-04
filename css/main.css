@@ -29,7 +29,7 @@ h2 {
 }
 
 h2.banner {
-  font-size: 128px;
+  font-size: 60px;
   font-weight: bold;
   display: block;
   padding: 84px 0;
@@ -42,6 +42,13 @@ h2.banner {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
+}
+
+@media (min-width: 600px) {
+  h2.banner {
+  font-size: 150px;
+  }
 }
 
 h3 {
