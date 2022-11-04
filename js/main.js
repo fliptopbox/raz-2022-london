@@ -1,15 +1,7 @@
-import getRegistrations from "./registrations.js";
+import "./registrations.js";
 const form = document.querySelector("form[data-netlify]");
 
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide", {
-    type: "loop",
-    autoplay: true,
-    interval: 5000,
-  });
-  splide.mount();
-});
-
+window.validateForm = validateForm;
 function validateForm(e) {
   e.stopImmediatePropagation();
   e.preventDefault();
@@ -18,11 +10,7 @@ function validateForm(e) {
   const fullname = document.querySelector("[name=fullname]").value;
   const emailaddress = document.querySelector("[name=emailaddress]").value;
 
-  const radios = document.querySelectorAll("[name=equipment]");
   const confirmed = document.querySelector("[name=confirm]").checked;
-  const equipment = Array.from(radios).filter((el) => el.checked);
-
-  const table = equipment.length ? equipment[0].value : null;
 
   let errors = [];
   const remail = /^[^\s]+@[^\s]+$/i;
@@ -32,18 +20,22 @@ function validateForm(e) {
   if (!emailaddress || !remail.test(emailaddress || ""))
     errors.push("Illegal email address");
 
-  if (!table) errors.push("Please select equipment option.");
   if (!confirmed) errors.push("Please confirm certification.");
-
-  console.log(fullname || "", emailaddress || "");
-  console.log(errors, errors.length);
 
   if (errors.length) {
     alert([...errors].join("\n"));
     return false;
   }
 
-  const reflector = `
+  console.log(reflector);
+  console.log(form);
+
+  form.submit();
+  setTimeout(reflector, 350);
+}
+
+function reflector() {
+  const html = `
         <h3 style="margin-top:0">Thank you</h3>
 
         <p>Your details have been sent successfully,
@@ -54,8 +46,5 @@ function validateForm(e) {
         because there are limited places for the workshop.</p>
     `;
 
-  console.log(reflector);
-  console.log(form);
-
-  form.submit();
+  document.querySelector("form").innerHTML = html;
 }
