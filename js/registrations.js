@@ -10,8 +10,8 @@ Remainder	25
 
 const url = [
   "https://docs.google.com/spreadsheets/",
-  "d/e/2PACX-1vSd06QuYh5e1UPWrum3Z9ZwKT6MpmZWRz_vxLjlCn0_6uTAD0rsR4aW-IxUUmKwv2Pf9eKd17FaFNQr/",
-  "pub?gid=0&single=true&output=tsv",
+  "d/e/2PACX-1vR714PJy2qhiN3qeH9K062wnQ3UM0hmncZB5BAUop8rr5XOHnLJ7RkIvn0zAOwhksF2Hjt9XBzTnWT3/",
+  "pub?gid=1499064379&single=true&output=tsv"
 ].join("");
 
 const data = await fetch(url);
