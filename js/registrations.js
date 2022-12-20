@@ -25,7 +25,10 @@ const summary = Object.fromEntries(array);
 
 const reminders = document.querySelectorAll(".remainder");
 const noun = "place" + String(summary.remainder > 1 ? "s" : "");
-const html = summary.remainder ? `${summary.remainder} ${noun} remaining` : "SOLD OUT";
+const html = Number( summary.remainder ) > 0
+    ? `${summary.remainder} ${noun} remaining`
+    : "WAITING LIST";
+
 reminders.forEach((el) => (el.innerHTML = html));
 
 const totalplaces = document.querySelectorAll(".total-places");
