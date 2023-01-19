@@ -34,7 +34,7 @@ reminders.forEach((el) => (el.innerHTML = html));
 const totalplaces = document.querySelectorAll(".total-places");
 totalplaces.forEach(el => el.innerHTML = summary.totalavailable);
 
-const buttonText = document.querySelectorAll("#ctatext");
+const buttonText = document.querySelector("#ctatext");
 buttonText.innerHTML = summary.buttontext || "Submit";
 
 
