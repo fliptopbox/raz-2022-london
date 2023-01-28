@@ -1,24 +1,29 @@
 import "./registrations.js";
 const form = document.querySelector("form[data-netlify]");
 
+function validEmail(value) {
+  const remail = /^[^\s]+@[^\s]+(\.[a-z]{2,})$/i;
+  const email = (value || "").trim();
+
+  return remail.test(email);
+}
+
 window.validateForm = validateForm;
 function validateForm(e) {
   e.stopImmediatePropagation();
   e.preventDefault();
 
   const form = document.querySelector("form");
-  const fullname = document.querySelector("[name=fullname]").value;
-  const emailaddress = document.querySelector("[name=emailaddress]").value;
+  const fullname = document.querySelector("[name=fullname]").value.trim();
+  const emailaddress = document.querySelector("[name=emailaddress]").value.trim();
 
   const confirmed = document.querySelector("[name=confirm]").checked;
 
   let errors = [];
-  const remail = /^[^\s]+@[^\s]+$/i;
   const rname = /^.{3,}$/i;
 
   if (!rname.test(`${fullname}`.trim())) errors.push("Please enter fullname");
-  if (!emailaddress || !remail.test(emailaddress || ""))
-    errors.push("Illegal email address");
+  if (!validEmail(emailaddress || "")) errors.push("Illegal email address");
 
   if (!confirmed) errors.push("Please confirm certification.");
 
